@@ -1,17 +1,17 @@
 import networkx as nx
 import random
 
-def generate_ring_lattice():
+def generate_ring_lattice(num_vertices:int = 100, num_neighbors:int = 8):
     """Generate a regular ring lattice with 100 vertices and 8 nearest neighbors."""
-    return nx.watts_strogatz_graph(100, 8, 0)
+    return nx.watts_strogatz_graph(num_vertices, num_neighbors, 0)
 
-def generate_random_graph():
+def generate_random_graph(num_vertices:int = 100, num_edges:int = 400):
     """Generate a random graph with 100 vertices and 400 edges."""
-    return nx.gnm_random_graph(100, 400)
+    return nx.gnm_random_graph(num_vertices, num_edges)
 
 def morph_graphs(G1, G2, p):
     """Create a p-morph of G1 and G2."""
-    V = G1.nodes()
+    V = set(G1.nodes())
     E1 = set(G1.edges())
     E2 = set(G2.edges())
     
@@ -50,7 +50,6 @@ def graph_to_dimacs_cnf(G, file_name):
 
     # Write to DIMACS CNF file
     with open(file_name, 'w') as file:
-        file.write("c created by edge2cnf\n")
         file.write(f"p cnf {num_vars} {num_clauses}\n")
         for clause in clauses:
             file.write(" ".join(map(str, clause)) + " 0\n")
