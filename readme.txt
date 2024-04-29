@@ -32,7 +32,7 @@ for node 1:
 
 So, we can see that each of the node occupies 5 values, based on the color that it is colored in.
 
-Explaination:
+Explanation:
 
 (line 48: create_sat_encoded_morphed_gcp.py)
 clauses.append([node * num_colors + c for c in range(1, num_colors + 1)])
