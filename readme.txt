@@ -86,4 +86,4 @@ for edge in G.edges():
         color 4, their respective values would be 4, 9
         color 5, their respective values would be 5, 10
 
-    So, if we negate these clauses, stating atleast 1 must be fulse, then we can ensure that 2 connected nodes do not have the same color.
+    So, if we negate these clauses, stating atleast 1 must be false, then we can ensure that 2 connected nodes do not have the same color.
