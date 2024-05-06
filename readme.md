@@ -19,8 +19,6 @@
 ## Contributions
 > Contributions to improve the code, add features, or fix bugs are welcome. Please feel free to submit a pull request.
 
-## License
-> This project is licensed under the [MIT License](LICENSE).
 
 **Approach Overview:**  
 Each node (0, 1, 2, 3, ...) can be colored in one of 5 (1, 2, 3, 4, 5) different colors.
