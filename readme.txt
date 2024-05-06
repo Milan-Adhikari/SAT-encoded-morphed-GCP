@@ -3,10 +3,11 @@ Author: Milan Adhikari
 The code is implemented to reproduce: https://www.cs.ubc.ca/~hoos/SATLIB/Benchmarks/SAT/SW-GCP/descr.html
 
 To run the code:
-    1. Run the command 'pip install -r requirements.txt'
-    2. specify the values of the parameters in the global_variables.py
-    3. then just run the create_sat_encoded_morphed_gcp.py
-    4. you can visualize the graphs using graphs_visualization.ipynb, it is helpful.
+    1. Clone the repository
+    2. Run the command 'pip install -r requirements.txt'
+    3. specify the values of the parameters in the global_variables.py
+    4. then just run the create_sat_encoded_morphed_gcp.py
+    5. you can visualize the graphs using graphs_visualization.ipynb, it is helpful.
 
 {There are comments within the file explaining all the code}
 
