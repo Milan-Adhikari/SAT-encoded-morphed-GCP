@@ -12,9 +12,9 @@
 > 5. Utilize `graphs_visualization.ipynb` for graph visualization.
 
 ## Code Structure
-> `create_sat_encoded_morphed_gcp.py`: Main script for SAT encoding of morphed graph coloring.
-> `global_variables.py`: File to define parameters and global variables.
-> `graphs_visualization.ipynb`: Jupyter notebook for visualizing graphs.
+> `create_sat_encoded_morphed_gcp.py`: Main script for SAT encoding of morphed graph coloring.  
+> `global_variables.py`: File to define parameters and global variables.  
+> `graphs_visualization.ipynb`: Jupyter notebook for visualizing graphs.  
 
 ## Contributions
 > Contributions to improve the code, add features, or fix bugs are welcome. Please feel free to submit a pull request.
