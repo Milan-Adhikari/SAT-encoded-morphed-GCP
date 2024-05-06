@@ -19,8 +19,10 @@
 ## Contributions
 > Contributions to improve the code, add features, or fix bugs are welcome. Please feel free to submit a pull request.
 
+## Explanation of code segments:
+> The code includes inline comments explaining each part of the implementation, including the SAT encoding process and the logic behind each clause introduced.
 
-**Approach Overview:**  
+### Approach Overview:  
 Each node (0, 1, 2, 3, ...) can be colored in one of 5 (1, 2, 3, 4, 5) different colors.
 
 for node 0:
@@ -40,9 +42,6 @@ for node 1:
 ...
 
 So, we can see that each of the node occupies 5 values, based on the color that it is colored in.
-
-## Explanation of code segments:
-> The code includes inline comments explaining each part of the implementation, including the SAT encoding process and the logic behind each clause introduced.
 
 ### (line 48: create_sat_encoded_morphed_gcp.py)
 > clauses.append([node * num_colors + c for c in range(1, num_colors + 1)])
