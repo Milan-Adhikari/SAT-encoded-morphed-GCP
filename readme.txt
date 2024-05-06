@@ -1,19 +1,38 @@
-Date: Apr 29, 2024
-Author: Milan Adhikari
-The code is implemented to reproduce: https://www.cs.ubc.ca/~hoos/SATLIB/Benchmarks/SAT/SW-GCP/descr.html
+**Date:** Apr 29, 2024  
+**Author:** Milan Adhikari  
 
-To run the code:
-    1. Clone the repository
-    2. Run the command 'pip install -r requirements.txt'
-    3. specify the values of the parameters in the global_variables.py
-    4. then just run the create_sat_encoded_morphed_gcp.py
-    5. you can visualize the graphs using graphs_visualization.ipynb, it is helpful.
+**Objective:**  
+The provided code aims to reproduce the gcp outlined at: [SW-GCP Benchmark](https://www.cs.ubc.ca/~hoos/SATLIB/Benchmarks/SAT/SW-GCP/descr.html). 
+
+**Instructions to Run the Code:**  
+1. Clone the repository.  
+2. Execute the command `pip install -r requirements.txt`.  
+3. Define the values of the parameters in `global_variables.py`.  
+4. Run the `create_sat_encoded_morphed_gcp.py`.  
+5. Utilize `graphs_visualization.ipynb` for graph visualization.
+
+## Code Structure
+
+- `create_sat_encoded_morphed_gcp.py`: Main script for SAT encoding of morphed graph coloring.
+- `global_variables.py`: File to define parameters and global variables.
+- `graphs_visualization.ipynb`: Jupyter notebook for visualizing graphs.
 
 {There are comments within the file explaining all the code}
 
-=============================================== The approach ===============================================
+## Explanation
 
-For each node (0, 1, 2, 3, ...), it can be colored in 5 (1, 2, 3, 4, 5) different colors.
+The code includes inline comments explaining each part of the implementation, including the SAT encoding process and the logic behind each clause introduced.
+
+## Contributions
+
+Contributions to improve the code, add features, or fix bugs are welcome. Please feel free to submit a pull request.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+**Approach Overview:**  
+Each node (0, 1, 2, 3, ...) can be colored in one of 5 (1, 2, 3, 4, 5) different colors.
 
 for node 0:
     if node 0 is colored in color 1, its value is 0 * (chromatic_num = 5) + 1 = 1
